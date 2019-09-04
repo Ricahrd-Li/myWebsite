@@ -1,0 +1,91 @@
+html {
+	font-size: 24px;
+}
+header {
+	flex-direction: column;
+}
+
+	header .header_container {
+		justify-content: space-between;
+	}
+
+		header .header_container a .header_title {
+			width: 125px;
+		}
+
+		header .header_container a .header_title .header_title_text {
+			display: none;
+		}
+
+		header .header_container .header_navigation {
+			width: 150px;
+		}
+
+.home_projects .project_container {
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+	.home_projects .project_container .project_text .project_text_title {
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.home_projects .project_container .project_text .project_text_subtitle {
+		font-size: 18px;
+	}
+
+	.home_projects .project_container .project_image img {
+		max-height: 100px;
+	}
+
+	.home_projects .project_container.zodiac {
+		flex-direction: column;
+	}
+
+	.home_projects .project_container.gamejams {
+		flex-direction: column;
+	}
+
+.home_resume .resume_images {
+	flex-direction: column;
+}
+
+	.home_resume .resume_images img {
+		max-height: 60px;
+		padding: 10px 0px;
+	}
+
+.home_contact {
+	padding: 20px;
+}
+
+.home_contact .contact_text {
+	padding: 20px;
+}
+
+	.home_contact .contact_container {
+		flex-direction: column;
+		padding: 0px 20px;
+	}
+		
+		.home_contact .contact_container .contact_image {
+			padding: 0px;
+		}
+
+			.home_contact .contact_container .contact_image img {
+				max-height: 100px;
+			}
+
+		.home_contact .contact_container .contact_text {
+		}
+
+		.home_contact .contact_container .contact_text .contact_text_title {
+			letter-spacing: 5px;
+			font-size: 32px;
+		}
+
+		.home_contact .contact_container .contact_text .contact_text_subtitle {
+			font-size: 18px;
+		}

@@ -1,0 +1,33 @@
+header {
+}
+
+	header .header_container .header_navigation a .header_navigation_item {
+		display: none;
+	}
+
+	header .header_container .header_navigation #header_navigation_button {
+		display: block;
+
+		color: white;
+		font-size: 48px;
+
+		cursor: pointer;
+	}
+
+.home_projects {
+	padding: 20px;
+}
+	
+	.home_projects .project_container .project_text .project_text_title {
+		font-size: 48px;
+		letter-spacing: 2px;
+		text-align: center;
+	}
+
+	.home_projects .project_container .project_text .project_text_subtitle {
+		font-size: 24px;
+	}
+
+	.home_projects .project_container .project_image img {
+		max-height: 150px;
+	}

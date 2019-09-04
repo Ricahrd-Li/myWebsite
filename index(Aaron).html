@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1">
+	<title>Aaron Tang - Home</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="app.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 1200px)" href="medium.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 550px)" href="small.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans|Raleway&display=swap" rel="stylesheet"> 
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="header_container">
+
+			<a class="scroll_to_top">
+			<div class="header_title">
+				<div class="header_title_image">
+					<img src="assets/header_logo.png">
+				</div>
+				<div class="header_title_text">
+					AARON TANG
+				</div>
+			</div>
+			</a>
+
+			<div class="header_navigation">
+				<a class="scroll_to_about">
+				<div class="header_navigation_item">
+					ABOUT
+				</div>
+				</a>
+
+				<a class="scroll_to_projects">
+				<div class="header_navigation_item">
+					PROJECTS
+				</div>
+				</a>
+
+				<a class="scroll_to_resume">
+				<div class="header_navigation_item">
+					RESUME
+				</div>
+				</a>
+
+				<a class="scroll_to_contact">
+				<div class="header_navigation_item">
+					CONTACT
+				</div>
+				</a>
+
+				<div id="header_navigation_button">
+					≡
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="header_container_hidden">
+			<div>
+				<hr>
+			</div>
+			
+			<a id="header_navigation_hidden_about" class="scroll_to_about">
+			<div class="header_navigation_hidden">
+				ABOUT
+			</div>
+			</a>
+
+			<a id="header_navigation_hidden_projects" class="scroll_to_projects">
+			<div class="header_navigation_hidden">
+				PROJECTS
+			</div>
+			</a>
+
+			<a id="header_navigation_hidden_resume" class="scroll_to_resume">
+			<div class="header_navigation_hidden">
+				RESUME
+			</div>
+			</a>
+
+			<a id="header_navigation_hidden_contact" class="scroll_to_contact">
+			<div class="header_navigation_hidden">
+				CONTACT
+			</div>
+			</a>
+		</div>
+
+	</header>
+
+	<div class="home_type_container">
+		<div class="home_type_text">
+			Hi, I'm Aaron!
+		</div>
+	</div>
+
+	<div id="anchor_top" class="home_image">
+	</div>
+
+	<div id="anchor_about" class="home_about">
+		<div class="about_text fade_in_element">
+			<p>My name is Aaron Tang.</p>
+
+			<p>I am a software engineer who loves to explore the unknown and apply this newfound knowledge towards real-world problems. I started as a self-taught programmer, and this insatiable curiosity to fully understand how things work has led me into the fields of computer science and the life sciences. No matter what the system is - an online web application, a key signaling protein, or even a novel video game mechanic - I enjoy learning and creating.</p>
+		</div>
+	</div>
+
+	<div id="anchor_projects" class="home_projects">
+		<div class="projects_text fade_in_element">
+			<p>I first started programming because I wanted to create video games. And no, not just the next Bejeweled clone (though I've done that too!). I've aimed for a massive RPG with its own living, breathing world.</p>
+
+			<p>Now, I've reached that stage, and more. Game development is my creative outlet for my own software development skills: I love immersing myself not only on the technical side - the architectural design, the gameplay mechanics - but also the creative side - the worldbuilding and lore. I have both worked solo, and collaborated with teams of other programmers, artists, and designers. My games range in genres from single-player puzzles, to RPGs, to online multiplayer games.</p>
+
+			<p>My software engineering projects have also been used for academic and research purposes. Take a look at some projects below, and on my resume!</p> 
+		</div>
+
+		<div class="project_container fade_in_element hover_element rehamove">
+			<div class="project_text">
+				<a href="https://lab.plopes.org/rehalib.html" target="_blank">
+					<div class="project_text_title">REHAMOVE</div>
+				</a>
+				<div class="project_text_subtitle"> — PYTHON/C# LIBRARIES FOR MEDICAL DEVICE — </div>
+				<a class="project_text_more">
+					<div class="project_text_more_text">Show More</div>
+					<div class="triangle">▶</div>
+				</a>
+			</div>
+			<div class="project_image">
+				<img id="project_image_zodiac" src="assets/rehamove_resized.png">
+			</div>
+			<div class="project_hidden">
+				I am working at the Human-Computer Interaction Lab at the University of Chicago with Professor Pedro Lopes to extend usability of the RehaMove, a medical device for electrical muscle stimulation (EMS). I developed Python and C# extensions of an existing C library to control this device, and integrated these libraries with software like Unity3D. <b>These libraries are currently publicly in use!</b> The files and documentation can be found on our lab's website.
+				<br><br>
+				Links: • <a href="https://lab.plopes.org/rehalib.html" target="_blank">PROJECT WEBPAGE</a> •
+			</div>
+		</div>
+		
+		<div class="project_container fade_in_element hover_element zodiac">
+			<div class="project_text">
+				<a href="https://agggron.itch.io/zodiac" target="_blank">
+					<div class="project_text_title">ZODIAC</div>
+				</a>
+				<div class="project_text_subtitle"> — TILE-MATCHING PUZZLE GAME — </div>
+				<a class="project_text_more">
+					<div class="project_text_more_text">Show More</div>
+					<div class="triangle">▶</div>
+				</a>
+			</div>
+			<div class="project_image">
+				<img id="project_image_zodiac" src="assets/zodiac_group1.png">
+			</div>
+			<div class="project_hidden">
+				Zodiac is a match-3 puzzle game taking inspiration from symbol of the zodiac calendar. Matching increasing numbers of tiles grants bonus points and extra time, so earn the highest score you can!
+				<br><br>
+				I developed Zodiac from scratch using Unity3D, in an early game jam when I first started game development. I later added newer features, such as being able to submit scores to an external MySQL database. View the high scores below!
+				<br><br>
+				Links: •
+				<a href="zodiac/zodiac.php" target="_blank">PLAY ZODIAC (IN BROWSER)</a> •  
+				<a href="https://agggron.itch.io/zodiac" target="_blank">ITCH.IO PAGE</a> •  
+				<a href="zodiac/high-scores.php" target="_blank">CURRENT HIGH SCORES</a> •
+			</div>
+		</div>
+		
+
+		<div class="project_container fade_in_element hover_element yellowmooninn">
+			<div class="project_text">
+				<a href="https://agggron.itch.io/the-yellow-moon-inn" target="_blank">
+					<div class="project_text_title">YELLOW MOON INN</div>
+				</a>
+				<div class="project_text_subtitle"> — TURN-BASED ROLE-PLAYING-GAME — </div>
+				<a class="project_text_more">
+					<div class="project_text_more_text">Show More</div>
+					<div class="triangle">▶</div>
+				</a>
+			</div>
+			<div class="project_image">
+				<img id="project_image_zodiac" src="assets/yellow_moon_inn_group2.png">
+			</div>
+			<div class="project_hidden">
+				Peculiar spirits have haunted the forest around your tavern. Master your brewmaking abilities to survive in this turn-based RPG!
+				<br><br>
+				I developed The Yellow Moon Inn as a month-long personal project for the 1-Room RPG game jam. Taking inspiration from both Dungeons & Dragons, and the board game The Red Dragon Inn, in this RPG the player must efficiently utilize their potion-making resources if they wish to successfully defend their tavern. This project was very useful in teaching me how to manage projects with large data, since I soon needed to refactor my code to account for many enemy types, items, recipes, etc. I tracked my progress on this project in a development log (see link).
+				<br><br>
+				Links: •
+				<a href="https://agggron.itch.io/the-yellow-moon-inn" target="_blank">PLAY THE YELLOW MOON INN (ON ITCH.IO)</a> •  
+				<a href="https://itch.io/jam/1-room-rpg-jam-2/topic/190264/devlog-the-yellow-moon-inn" target="_blank">DEVELOPMENT LOG</a> •
+			</div>
+		</div>
+
+		<div class="project_container fade_in_element hover_element gamejams">
+			<div class="project_text">
+				<a href="https://www.toontownrewritten.com/" target="_blank">
+					<div class="project_text_title">OTHER PROJECTS</div>
+				</a>
+				<div class="project_text_subtitle"> — TOONTOWN REWRITTEN — </div>
+				<div class="project_text_subtitle"> — GAME JAMS — </div>
+				<a class="project_text_more">
+					<div class="project_text_more_text">Show More</div>
+					<div class="triangle">▶</div>
+				</a>
+			</div>
+			<div class="project_image">
+				<img id="project_image_zodiac" src="assets/game_jams_group_new.png">
+			</div>
+			<div class="project_hidden">
+				I love being involved in game development projects! I have been a part of projects ranging from large-scale online games, to indie games during game jams. It is awesome to be collaborating with so many wonderful artists, sound designers, and programmers! Here are just some of these projects:
+				<br><br>
+				<b>Toontown Rewritten:</b> This multiplayer online game is a volunteer project that resurrects Disney's popular MMO, Toontown Online. I am part of the development team, working on bugfixes and gameplay mechanics. This has been a great opportunity to work with a team of other software developers on an expansive (and live) codebase!
+				<br><br>
+				<b>Phage Phighter</b>: As a loyal white blood cell, it is up to you to neutralize a threateningly infectious virus! This endless-runner-type game was created with a team for Global Game Jam (with theme 'transmission') at Irvine, CA. 
+				<br><br>
+				<b>Titanomachy</b>: In a true war of Greek deities, you tip the balance. Aid the Olympians in taking down the Titans! This action game was created with a team for an online Itch.io game jam.
+				<br><br>
+				<b>Band of Shapes</b>: When we have sunk down to our lowest point, support from others can drag us out of the darkness. Experience the quest for companionship in this puzzle-action game. This was created with a team for the Empathy Game Jam at Irvine, CA.
+				<br><br>
+				<b>The Trial</b>: What are you afraid of? For me, it's often been internalized fear - always feeling judged, and not living to others' expectations of me. This thrilling adventure explores the concept of fear, made with a team for the Spooky Game Jam at Chicago, IL.
+				<br><br>
+				Links: •
+				<a href="https://www.toontownrewritten.com/" target="_blank">TOONTOWN REWRITTEN</a> •  
+				<a href="https://globalgamejam.org/2018/games/phage-phighter" target="_blank">PHAGE PHIGHTER</a> • 
+				<a href="https://agggron.itch.io/titanomachy" target="_blank">TITANOMACHY</a> • 
+				<a href="https://agggron.itch.io/band-of-shapes" target="_blank">BAND OF SHAPES</a> • 
+				<a href="https://vaalkiden.itch.io/the-trial" target="_blank">THE TRIAL</a> •
+			</div>
+		</div>
+
+	</div>
+
+	<div id="anchor_resume" class="home_resume">
+		<div class="resume_text fade_in_element">
+			<p>I've worked and/or studied at the following universities:</p>
+		</div>
+		<div class="resume_images fade_in_element">
+			<img src="assets/berkeley_logo.png" height="100px">
+			<img src="assets/caltech_logo.png" height="150px">
+			<img src="assets/uchicago_logo.png" height="100px">
+		</div>
+		<div class="resume_text fade_in_element">
+			<p>You can check out my resume: <a href="assets/Tang_Aaron_Resume.pdf" target="_blank">HERE</a>. (Updated: June 2019)</p>
+		</div>
+	</div>
+
+	<div id="anchor_contact" class="home_contact">
+		<div class="contact_text fade_in_element">
+			<p>Feel free to contact me through any of the following mediums. I would love to hear from you!</p>
+		</div>
+
+		<div class="contact_container_all">
+
+			<a href="mailto:aaronwt@berkeley.edu?Subject=I'm%20interested!" target="_blank">
+			<div class="contact_container fade_in_element hover_element">
+				<div class="contact_image">
+					<img src="assets/mail_icon.png">
+				</div>
+				<div class="contact_text_title">EMAIL</div>
+				<div class="contact_text_subtitle">Don't hesitate to message me directly!</div>
+			</div>
+			</a>
+
+			<a href="https://www.linkedin.com/in/aaronwtang/" target="_blank">
+			<div class="contact_container fade_in_element hover_element">
+				<div class="contact_image">
+					<img src="assets/linkedin_icon.png">
+				</div>
+				<div class="contact_text_title">LINKEDIN</div>
+				<div class="contact_text_subtitle">Find out more about my work experience and background.</div>
+			</div>
+			</a>
+
+			<a href="https://github.com/Agggron" target="_blank">
+			<div class="contact_container fade_in_element hover_element">
+				<div class="contact_image">
+					<img src="assets/github_icon.png">
+				</div>
+				<div class="contact_text_title">GITHUB</div>
+				<div class="contact_text_subtitle">Check out my open-source website code, and more!</div>
+			</div>
+			</a>
+
+			<a href="https://agggron.itch.io/" target="_blank">
+			<div class="contact_container fade_in_element hover_element">
+				<div class="contact_image">
+					<img src="assets/itchio_icon.png">
+				</div>
+				<div class="contact_text_title">ITCH.IO</div>
+				<div class="contact_text_subtitle">View my profile of developed indie games.</div>
+			</div>
+			</a>
+		</div>
+
+	</div>
+
+	<footer>
+		<div class="footer_text">
+			© 2017-2019 | Website by Aaron Tang 
+		</div>
+	</footer>
+</body>
+
+</html>
