@@ -32,7 +32,7 @@ body {
 }
 
 header {
-	background: rgba(32, 32, 32, 0.95);
+	background: rgba(131, 26, 26, 0.7);
 
 	display: flex;
 	flex-direction: column;
@@ -123,14 +123,15 @@ header {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	height: 100vh;
+	height: 90vh;
+	/* display: ; */
 }
 
 .home_type_container {
 	position: absolute;
 
 	width: 280px;
-	top: 215px;
+	top: 100px;
 	left: 50%;
 	margin-left: -140px;
 }

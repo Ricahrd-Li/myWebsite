@@ -6,7 +6,7 @@
 	<meta name="viewport" content="initial-scale=1">
 	<title>Zhehao Li --Home</title>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-	<link rel="stylesheet" type="text/css" href="app.css">
+	<link rel="stylesheet" type="text/css" href="app2.css">
 	<link rel="stylesheet" type="text/css" media="screen and (max-width: 1200px)" href="medium.css">
 	<link rel="stylesheet" type="text/css" media="screen and (max-width: 550px)" href="small.css">
 	<link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans|Raleway&display=swap" rel="stylesheet"> 
@@ -16,12 +16,13 @@
 
 <body>
 	<header>
+		<!-- Navigation bar -->
 		<div class="header_container">
 
 			<a class="scroll_to_top">
 			<div class="header_title">
 				<div class="header_title_image">
-					<img src="assets/star.jpeg">
+					<img src="assets/header_logo.png">
 				</div>
 				<div class="header_title_text">
 					Zhehao Li 李喆昊
@@ -36,15 +37,15 @@
 				</div>
 				</a>
 
-				<a class="scroll_to_projects">
-				<div class="header_navigation_item">
-					PROJECTS
-				</div>
-				</a>
-
 				<a class="scroll_to_resume">
 				<div class="header_navigation_item">
 					RESUME
+				</div>
+				</a>
+
+				<a class="scroll_to_playground">
+				<div class="header_navigation_item">
+					PLAYGROUND
 				</div>
 				</a>
 
@@ -72,15 +73,15 @@
 			</div>
 			</a>
 
-			<a id="header_navigation_hidden_projects" class="scroll_to_projects">
+			<a id="header_navigation_hidden_resume" class="scroll_to_projects">
 			<div class="header_navigation_hidden">
-				PROJECTS
+				RESUME
 			</div>
 			</a>
 
-			<a id="header_navigation_hidden_resume" class="scroll_to_resume">
+			<a id="header_navigation_hidden_playground" class="scroll_to_resume">
 			<div class="header_navigation_hidden">
-				RESUME
+				PLAYGROUND
 			</div>
 			</a>
 
@@ -93,14 +94,25 @@
 
 	</header>
 
-    <div class="home_type_container">
-		<div class="home_type_text">
-			Hi, I'm Zhehao!
-		</div>
+	<!--main body of webpage-->
+    <div class="home_imageSlier_container">
+		<span id="slider_img_1"></span>
+		<span id="slider_img_2"></span>
+		<span id="slider_img_3"></span>
+			<div class="home_image_container">
+				<img src="assets/main_page.jpg" class="home_slider_image">
+				<img src="assets/main_page.jpg" class="home_slider_image">
+				<img src="assets/main_page.jpg" class="home_slider_image">
+			</div>
+			<div class="home_button_container">
+				<a href="#slider_image_1" class="home_slider_button"></a>
+				<a href="#slider_image_2" class="home_slider_button"></a>
+				<a href="#slider_image_3" class="home_slider_button"></a>
+			</div>
 	</div>
 
-	<div id="anchor_top" class="home_image">
-	</div>
+	<!-- <div id="anchor_top" class="home_image">
+	</div> -->
 
 	<div id="anchor_about" class="home_about">
 		<div class="about_text fade_in_element">
@@ -111,7 +123,10 @@
 		</div>
 	</div>
 
-	<div id="anchor_projects" class="home_projects">
-		<div class="projects_text fade_in_element">
-            <p>My first research project is done in University of Chicago.</p>
-		</div>
+		<footer>
+			<div class="footer_text">
+				©  2019 | Website by Zhehao Li, thanks for the help of Aaron Tang's work 
+			</div>
+		</footer>
+	</body>
+</html>	
