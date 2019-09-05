@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="utf-8">
+    <title>Zhehao Li --Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/header_logo.png">
+    <link rel="stylesheet" type="text/css" href="app(Zhehao).css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans|Raleway&display=swap" rel="stylesheet"> 
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <header>
+        <div class="header_container">
+
+            <a class="scroll_to_top">
+            <div class="header_title">
+                <div class="header_title_image">
+                    <img src="assets/header_logo.png">
+                </div>
+                <div class="header_title_text">
+                    Hi, I'm Zhehao Li!
+                </div>
+            </div>
+            </a>
+
+            <div class="header_navigation">
+                <a class="scroll_to_about">
+                <div class="header_navigation_item">
+                    ABOUT
+                </div>
+                </a>
+
+                <a class="scroll_to_resume">
+                <div class="header_navigation_item">
+                    RESUME
+                </div>
+                </a>
+
+                <a class="scroll_to_playground">
+                <div class="header_navigation_item">
+                    PLAYGROUND
+                </div>
+                </a>
+
+                <a class="scroll_to_contact">
+                <div class="header_navigation_item">
+                    CONTACT
+                </div>
+                </a>
+
+                <div id="header_navigation_button">
+                    ≡
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="header_container_hidden">
+            <div>
+                <hr>
+            </div>
+            
+            <a id="header_navigation_hidden_about" class="scroll_to_about">
+            <div class="header_navigation_hidden">
+                ABOUT
+            </div>
+            </a>
+
+            <a id="header_navigation_hidden_resume" class="scroll_to_projects">
+            <div class="header_navigation_hidden">
+                RESUME
+            </div>
+            </a>
+
+            <a id="header_navigation_hidden_playground" class="scroll_to_resume">
+            <div class="header_navigation_hidden">
+                PLAYGROUND
+            </div>
+            </a>
+
+            <a id="header_navigation_hidden_contact" class="scroll_to_contact">
+            <div class="header_navigation_hidden">
+                CONTACT
+            </div>
+            </a>
+        </div>
+
+    </header>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <div class="home_image1"></div>
+            <!-- <div class="text">Caption Text</div> -->
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <div class="home_image2"></div>
+            <!-- <div class="text">Caption Two</div> -->
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <div class="home_image3"></div>
+            <!-- <div class="text">Caption Three</div> -->
+        </div>
+
+    </div>
+    <!-- <br> -->
+
+    <!-- <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+    </div> -->
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        // var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        // for (i = 0; i < dots.length; i++) {
+        //     dots[i].className = dots[i].className.replace(" active", "");
+        // }
+        slides[slideIndex-1].style.display = "block";  
+        // dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+    </script>
+
+
+    <div id="anchor_about" class="home_about">
+        <div class="about_text fade_in_element">
+            <p>My name is Zhehao Li.</p>
+            
+            <p>I am currently a junior student in University of Science and Technology of China</p>
+            <p> who love making new friends and trying new things.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_text">
+            ©  2019 | Website by Zhehao Li, thanks for the help of Aaron Tang's work 
+        </div>
+    </footer>
+</body>
+
+</html> 
