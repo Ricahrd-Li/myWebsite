@@ -18,7 +18,7 @@ const fade_in_elements = function() {
 						$(this).animate({opacity: 1, marginTop: '20px', marginBottom: '20px'});
 					});
 				} 
-				// Case 2: On hover, fade container. (For project boxes)
+				// Case 2: On hover, fade container. (For resume boxes)
 				else {
 					$(this).animate({opacity: 1}, 600).delay(1).hover(function() {
 						$(this).animate({opacity: 0.85});
@@ -76,21 +76,21 @@ $(document).ready(function() {
 		console.log("toggle");
 	});
 
-	$('.project_text_more').click(function(event) {
-		if ($(this).parent().siblings('.project_hidden').css('display') == 'none') {
-			$(this).children('.project_text_more_text').html('Show Less');
+	$('.resume_text_more').click(function(event) {
+		if ($(this).parent().siblings('.resume_hidden').css('display') == 'none') {
+			$(this).children('.resume_text_more_text').html('Show Less');
 			$(this).children('.triangle').rotate(90);
 		} else {
-			$(this).children('.project_text_more_text').html('Show More');
+			$(this).children('.resume_text_more_text').html('Show More');
 			$(this).children('.triangle').rotate(0);
 		}
-		$(this).parent().siblings('.project_hidden').slideToggle();
+		$(this).parent().siblings('.resume_hidden').slideToggle();
 
 		event.stopPropagation();
 		event.preventDefault();
 	})
 
-	var navigation_hidden_links = ['.scroll_to_top', '#header_navigation_hidden_about', '#header_navigation_hidden_projects', '#header_navigation_hidden_resume', '#header_navigation_hidden_contact']
+	var navigation_hidden_links = ['.scroll_to_top', '#header_navigation_hidden_about', '#header_navigation_hidden_resumes', '#header_navigation_hidden_resume', '#header_navigation_hidden_contact']
 	for (i = 0; i < navigation_hidden_links.length; i++) {
 		$(navigation_hidden_links[i]).click(function(event) {
 			// $('.header_container_hidden').slideToggle();

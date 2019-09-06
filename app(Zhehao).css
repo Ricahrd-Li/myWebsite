@@ -65,7 +65,7 @@ header {
         }
             
             header .header_container a .header_title .header_title_image img {
-                max-height: 50px;
+                max-height: 45px;
             }
 
             header .header_container a .header_title .header_title_text {
@@ -223,7 +223,10 @@ div .home_image{
   /* display: inline-block; */
 }
 
-.home_projects {
+/*
+*  resume
+*/
+.home_resume {
 	background: white;
 
 	display: flex;
@@ -231,25 +234,40 @@ div .home_image{
 	justify-content: space-evenly;
 	align-items: stretch;
 
-	padding: 40px;
+	padding: 20px;
 }
 
-	.home_projects .projects_text {
+	.home_resume.resume_text {
 		color: black;
 	}
 
-	.home_projects .project_container {
+	.home_resume .resume_container {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
 		align-items: center;
 
-		margin: 25px 0px;
+		margin: 10px 0px;
 		padding: 20px;
 	}
 
-		.home_projects .project_container .project_text {
+  .home_resume .resume_container.undergraduate {
+		background-color: rgb(84, 185, 224);
+	}
+
+		.home_resume .resume_container.undergraduate .resume_hidden {
+      background-color: rgb(23, 161, 207);
+    }
+
+  .home_resume .resume_container.UChicago2019 {
+		background-color: rgb(194, 40, 29);
+	}
+
+		.home_resume .resume_container.UChicago2019 .resume_hidden {
+			background-color:rgb(121, 24, 24);
+		}
+		.home_resume .resume_container .resume_text {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-evenly;
@@ -258,11 +276,11 @@ div .home_image{
 			color: white;
 		}
 
-			.home_projects .project_container .project_text a {
+			.home_resume .resume_container .resume_text a {
 				color: white;
 			}
 
-			.home_projects .project_container .project_text .project_text_title {
+			.home_resume .resume_container .resume_text .resume_text_title {
 				font-family: 'Raleway', Times New Roman, sans-serif;
 				font-size: 64px;
 				font-weight: bold;
@@ -272,13 +290,19 @@ div .home_image{
 				margin-bottom: 10px;
 			}
 
-			.home_projects .project_container .project_text .project_text_subtitle {
+      .home_resume .resume_container .resume_text .resume_text_time {
+				font-family: 'Nunito', Times New Roman, sans-serif;
+				font-size: 23px;
+				text-align: center;
+      }
+      
+			.home_resume .resume_container .resume_text .resume_text_subtitle {
 				font-family: 'Nunito', Times New Roman, sans-serif;
 				font-size: 28px;
 				text-align: center;
 			}
 
-			.home_projects .project_container .project_text .project_text_more {
+			.home_resume .resume_container .resume_text .resume_text_more {
 				display: flex;
 				flex-direction: row;
 				flex-wrap: nowrap;
@@ -291,31 +315,38 @@ div .home_image{
 				cursor: pointer;
 			}
 
-				.home_projects .project_container .project_text .project_text_more .project_text_more_text {
+				.home_resume .resume_container .resume_text .resume_text_more .resume_text_more_text {
 					padding-right: 20px;
 				}
 
-		.home_projects .project_container .project_image {
+		.home_resume .resume_container .resume_image {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-
 			padding: 20px;
 		}
 
-			.home_projects .project_container .project_image img {
+			.home_resume .resume_container .resume_image img {
 				max-height: 200px;
 			}
 
-		.home_projects .project_container .project_hidden {
+		.home_resume .resume_container .resume_hidden {
 			margin: 10px;
 			padding: 30px;
 
 			color: white;
 			display: none;
     }
+    .home_resume .resume_container .resume_hidden_text {
+      text-align:left; 
+      font-size: 20px;
+    }
     
+
+/* 
+*  playgound 
+*/
 .home_playground{
   background: #fdfdfd;
 }
@@ -324,6 +355,10 @@ div .home_image{
   font-size: 30px;
   font-family: 'Raleway', Times New Roman, sans-serif;
 }
+
+/* 
+*  footer 
+*/
 
 footer {
   background: #202020;
@@ -341,6 +376,9 @@ footer {
     font-size: 20px;
   }
 
+/* 
+*  Fade
+*/
 .fade_in_element {
   opacity: 0;
   z-index: 1;
